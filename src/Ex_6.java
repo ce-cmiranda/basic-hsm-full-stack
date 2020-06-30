@@ -50,14 +50,14 @@ class Conta {
 }
 
 class ContaInvestimento extends Conta{
-	double limite_saque;
+
 	public ContaInvestimento(String cpf, String agencia, String conta, String digito, double saldo) {
 		super(cpf, agencia, conta, digito, saldo);
 	}
 
 	@Override
 	public void deposito(double valor) {
-		this.saldo += valor*1.1;
+		this.saldo += valor*1.01;
 	}
 	
 	@Override
